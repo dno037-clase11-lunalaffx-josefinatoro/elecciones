@@ -12,7 +12,7 @@ Papa.parse("https://raw.githubusercontent.com/dno037-clase11/elecciones-josefina
             document.getElementById("aca").innerHTML +=
                 '<div class="col-sm-6 col-md-4 col-lg-3"><div class="card h-100 shadow-sm"><img src="images/region-' +
                 (i + 1) +
-                '.jpg" class="card-img-top"/><div class="card-body"><a href="#" data-bs-toggle="modal" data-bs-target="#unModal"><h3 class="card-title fs-6">' +
+                '.jpeg" class="card-img-top"/><div class="card-body"><a href="#" data-bs-toggle="modal" data-bs-target="#unModal"><h3 class="card-title fs-6">' +
                 region +
                 "</h3></div></div>";
         });
