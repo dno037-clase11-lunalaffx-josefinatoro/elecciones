@@ -7,6 +7,9 @@ header {
 h1 {
 	font-family: 'Righteous', cursive;
 }
+h3{
+	font-family: 'Righteous', cursive;
+}
 
 p {
 	font-family: 'Poppins', sans-serif;
@@ -14,14 +17,43 @@ p {
 
 body {
 	font-family: 'Poppins', sans-serif;
-	 background-image: url("images/background.png");
+	background-image: url("images/background.png");
+	flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.img-fluid{
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+
 }
 
-.card-img-top {
-	background: rgba( 255, 255, 255, 0.35);
+.card {
+	background: rgba( 255, 255, 255, 0.00);
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-	backdrop-filter: blur( 20.0px);
-	-webkit-backdrop-filter: blur( 20.0px);
+	backdrop-filter: blur( 6.5px);
+	-webkit-backdrop-filter: blur( 6.5px);
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18);
 }
+
+.card-img-top{
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.card-img-top:hover {
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	filter: none;
+	flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
